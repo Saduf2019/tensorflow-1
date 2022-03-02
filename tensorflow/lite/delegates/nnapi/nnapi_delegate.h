@@ -222,8 +222,8 @@ class StatefulNnApiDelegate : public TfLiteDelegate {
   //
   // WARNING: This is an experimental interface that is subject to change.
   StatefulNnApiDelegate(
-      const NnApiSLDriverImplFL5* nnapi_support_library_driver,
-      Options options);
+      const NnApiSLDriverImplFL5* nnapi_support_library_driver, Options options,
+      bool check_for_nullptr = false);
 
   ~StatefulNnApiDelegate() = default;
 
